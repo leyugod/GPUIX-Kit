@@ -1,0 +1,14 @@
+name: Component request
+description: Propose a reusable UI capability
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: UI use case and proposed API
+      description: Describe the reusable component or adapter; business services are outside scope.
+    validations:
+      required: true
+  - type: textarea
+    id: interactions
+    attributes:
+      label: States, keyboard behavior and host requirements

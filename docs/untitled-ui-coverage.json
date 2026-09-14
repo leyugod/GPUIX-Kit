@@ -1,0 +1,989 @@
+{
+  "version": "0.19.0",
+  "reference": "https://www.untitledui.com/react/components",
+  "checkedAt": "2026-09-14",
+  "counts": {
+    "base": 30,
+    "application": 37,
+    "marketing": 18
+  },
+  "scope": "All component directory categories; page examples are separate products, not component categories.",
+  "equivalence": "Native component contracts and host interfaces. Web DOM implementations, private PRO source, exact commercial variations and host services are not copied or claimed.",
+  "rows": [
+    {
+      "id": "base-avatars",
+      "group": "base",
+      "reference": "Avatars",
+      "exports": [
+        "Avatar",
+        "AvatarGroup",
+        "AvatarLabelGroup"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-badge-groups",
+      "group": "base",
+      "reference": "Badge groups",
+      "exports": [
+        "BadgeGroup"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-badges",
+      "group": "base",
+      "reference": "Badges",
+      "exports": [
+        "Badge"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-button-groups",
+      "group": "base",
+      "reference": "Button groups",
+      "exports": [
+        "ButtonGroup"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-buttons",
+      "group": "base",
+      "reference": "Buttons",
+      "exports": [
+        "Button"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-checkboxes",
+      "group": "base",
+      "reference": "Checkboxes",
+      "exports": [
+        "Checkbox",
+        "CheckboxGroup"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-context-menus",
+      "group": "base",
+      "reference": "Context menus",
+      "exports": [
+        "ContextMenu"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-credit-cards",
+      "group": "base",
+      "reference": "Credit cards",
+      "exports": [
+        "CreditCard"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-dropdowns",
+      "group": "base",
+      "reference": "Dropdowns",
+      "exports": [
+        "DropdownMenu"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-featured-icons",
+      "group": "base",
+      "reference": "Featured icons",
+      "exports": [
+        "FeaturedIcon"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-illustrations",
+      "group": "base",
+      "reference": "Illustrations",
+      "exports": [
+        "Illustration"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-inputs",
+      "group": "base",
+      "reference": "Inputs",
+      "exports": [
+        "Input",
+        "SearchField",
+        "NumberField"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-mobile-app-store-buttons",
+      "group": "base",
+      "reference": "Mobile app store buttons",
+      "exports": [
+        "AppStoreButton"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-progress-indicators",
+      "group": "base",
+      "reference": "Progress indicators",
+      "exports": [
+        "Progress",
+        "ProgressRing"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-qr-codes",
+      "group": "base",
+      "reference": "QR codes",
+      "exports": [
+        "QRCode"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-radio-buttons",
+      "group": "base",
+      "reference": "Radio buttons",
+      "exports": [
+        "RadioButton"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-radio-groups",
+      "group": "base",
+      "reference": "Radio groups",
+      "exports": [
+        "RadioGroup",
+        "RadioCardGroup"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-rating-badge-and-stars",
+      "group": "base",
+      "reference": "Rating badge and stars",
+      "exports": [
+        "RatingStars",
+        "RatingBadge"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-select",
+      "group": "base",
+      "reference": "Select",
+      "exports": [
+        "Select",
+        "ComboBox"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-multi-select",
+      "group": "base",
+      "reference": "Multi-select",
+      "exports": [
+        "MultiSelect"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-sliders",
+      "group": "base",
+      "reference": "Sliders",
+      "exports": [
+        "Slider",
+        "RangeSlider"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-social-buttons",
+      "group": "base",
+      "reference": "Social buttons",
+      "exports": [
+        "SocialButton"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-tags",
+      "group": "base",
+      "reference": "Tags",
+      "exports": [
+        "Tag",
+        "TokenField",
+        "TokenEditor"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-text-editors",
+      "group": "base",
+      "reference": "Text editors",
+      "exports": [
+        "RichTextEditor"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-textarea",
+      "group": "base",
+      "reference": "Textarea",
+      "exports": [
+        "Textarea"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-toggles",
+      "group": "base",
+      "reference": "Toggles",
+      "exports": [
+        "Switch"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-tooltips",
+      "group": "base",
+      "reference": "Tooltips",
+      "exports": [
+        "Tooltip"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-utility-buttons",
+      "group": "base",
+      "reference": "Utility buttons",
+      "exports": [
+        "UtilityButton",
+        "IconButton"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-verification-code-inputs",
+      "group": "base",
+      "reference": "Verification code inputs",
+      "exports": [
+        "VerificationCodeInput"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "base-video-players",
+      "group": "base",
+      "reference": "Video players",
+      "exports": [
+        "VideoPlayer"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-activity-feeds",
+      "group": "application",
+      "reference": "Activity feeds",
+      "exports": [
+        "ActivityFeed",
+        "Timeline"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-activity-gauges",
+      "group": "application",
+      "reference": "Activity gauges",
+      "exports": [
+        "ActivityGauge"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-alerts",
+      "group": "application",
+      "reference": "Alerts",
+      "exports": [
+        "Alert"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-breadcrumbs",
+      "group": "application",
+      "reference": "Breadcrumbs",
+      "exports": [
+        "Breadcrumb",
+        "PathControl"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-calendars",
+      "group": "application",
+      "reference": "Calendars",
+      "exports": [
+        "EventCalendar"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-card-headers",
+      "group": "application",
+      "reference": "Card headers",
+      "exports": [
+        "CardHeader"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-carousels",
+      "group": "application",
+      "reference": "Carousels",
+      "exports": [
+        "Carousel"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-code-snippets",
+      "group": "application",
+      "reference": "Code snippets",
+      "exports": [
+        "CodeBlock"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-color-pickers",
+      "group": "application",
+      "reference": "Color pickers",
+      "exports": [
+        "ColorPicker",
+        "ColorPanel"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-command-menus",
+      "group": "application",
+      "reference": "Command menus",
+      "exports": [
+        "CommandPalette"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-content-dividers",
+      "group": "application",
+      "reference": "Content dividers",
+      "exports": [
+        "ContentDivider",
+        "Separator"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-date-pickers",
+      "group": "application",
+      "reference": "Date pickers",
+      "exports": [
+        "DatePicker",
+        "DateRangePicker"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-empty-states",
+      "group": "application",
+      "reference": "Empty states",
+      "exports": [
+        "EmptyState",
+        "ResourceState"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-file-uploaders",
+      "group": "application",
+      "reference": "File uploaders",
+      "exports": [
+        "FileUploader"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-filter-bars",
+      "group": "application",
+      "reference": "Filter bars",
+      "exports": [
+        "FilterBar",
+        "FilterBuilder",
+        "SavedViewPicker"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-gradient-pickers",
+      "group": "application",
+      "reference": "Gradient pickers",
+      "exports": [
+        "GradientPicker",
+        "GradientPreview"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-header-navigations",
+      "group": "application",
+      "reference": "Header navigations",
+      "exports": [
+        "HeaderNavigation"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-image-pickers",
+      "group": "application",
+      "reference": "Image pickers",
+      "exports": [
+        "ImagePicker",
+        "ImageViewer"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-inline-ctas",
+      "group": "application",
+      "reference": "Inline CTAs",
+      "exports": [
+        "InlineCTA"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-line-bar-charts",
+      "group": "application",
+      "reference": "Line & bar charts",
+      "exports": [
+        "LineChart",
+        "AreaChart",
+        "BarChart"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-loading-indicators",
+      "group": "application",
+      "reference": "Loading indicators",
+      "exports": [
+        "LoadingIndicator",
+        "Skeleton"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-messaging",
+      "group": "application",
+      "reference": "Messaging",
+      "exports": [
+        "MessageList",
+        "MessageComposer"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-metrics",
+      "group": "application",
+      "reference": "Metrics",
+      "exports": [
+        "MetricCard"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-modals",
+      "group": "application",
+      "reference": "Modals",
+      "exports": [
+        "Dialog",
+        "AlertDialog",
+        "ConfirmDialog",
+        "PromptDialog"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-notifications",
+      "group": "application",
+      "reference": "Notifications",
+      "exports": [
+        "ToastViewport",
+        "NoticeCard",
+        "UndoToast"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-page-headers",
+      "group": "application",
+      "reference": "Page headers",
+      "exports": [
+        "PageHeader"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-paginations",
+      "group": "application",
+      "reference": "Paginations",
+      "exports": [
+        "Pagination"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-pie-charts",
+      "group": "application",
+      "reference": "Pie charts",
+      "exports": [
+        "PieChart",
+        "DonutChart"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-progress-steps",
+      "group": "application",
+      "reference": "Progress steps",
+      "exports": [
+        "ProgressSteps"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-radar-charts",
+      "group": "application",
+      "reference": "Radar charts",
+      "exports": [
+        "RadarChart"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-section-footers",
+      "group": "application",
+      "reference": "Section footers",
+      "exports": [
+        "SectionFooter"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-section-headers",
+      "group": "application",
+      "reference": "Section headers",
+      "exports": [
+        "SectionHeader"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-sidebar-navigations",
+      "group": "application",
+      "reference": "Sidebar navigations",
+      "exports": [
+        "SidebarNavigation",
+        "SourceListSidebar",
+        "NavigationSplitView"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-drawers",
+      "group": "application",
+      "reference": "Drawers",
+      "exports": [
+        "Drawer",
+        "Sheet"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-tables",
+      "group": "application",
+      "reference": "Tables",
+      "exports": [
+        "Table",
+        "DataGrid",
+        "ConfigurableDataGrid"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-tabs",
+      "group": "application",
+      "reference": "Tabs",
+      "exports": [
+        "Tabs",
+        "DocumentTabs"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "application-tree-views",
+      "group": "application",
+      "reference": "Tree views",
+      "exports": [
+        "TreeView",
+        "LazyTreeView"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/README.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-banners",
+      "group": "marketing",
+      "reference": "Banners",
+      "exports": [
+        "Banner"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-blog-sections",
+      "group": "marketing",
+      "reference": "Blog sections",
+      "exports": [
+        "BlogSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-careers-sections",
+      "group": "marketing",
+      "reference": "Careers sections",
+      "exports": [
+        "CareersSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-contact-sections",
+      "group": "marketing",
+      "reference": "Contact sections",
+      "exports": [
+        "ContactSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-content-rich-text-sections",
+      "group": "marketing",
+      "reference": "Content & rich text sections",
+      "exports": [
+        "RichContentSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-cta-sections",
+      "group": "marketing",
+      "reference": "CTA sections",
+      "exports": [
+        "CTASection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-faq-sections",
+      "group": "marketing",
+      "reference": "FAQ sections",
+      "exports": [
+        "FAQSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-features-sections",
+      "group": "marketing",
+      "reference": "Features sections",
+      "exports": [
+        "FeaturesSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-footers",
+      "group": "marketing",
+      "reference": "Footers",
+      "exports": [
+        "FooterSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-header-navigations",
+      "group": "marketing",
+      "reference": "Header navigations",
+      "exports": [
+        "MarketingHeaderNavigation"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-hero-header-sections",
+      "group": "marketing",
+      "reference": "Hero header sections",
+      "exports": [
+        "HeroHeaderSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-header-sections",
+      "group": "marketing",
+      "reference": "Header sections",
+      "exports": [
+        "HeaderSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-metrics-sections",
+      "group": "marketing",
+      "reference": "Metrics sections",
+      "exports": [
+        "MetricsSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-newsletter-cta-sections",
+      "group": "marketing",
+      "reference": "Newsletter CTA sections",
+      "exports": [
+        "NewsletterCTA"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-pricing-sections",
+      "group": "marketing",
+      "reference": "Pricing sections",
+      "exports": [
+        "PricingSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-social-proof-sections",
+      "group": "marketing",
+      "reference": "Social proof sections",
+      "exports": [
+        "SocialProofSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-team-sections",
+      "group": "marketing",
+      "reference": "Team sections",
+      "exports": [
+        "TeamSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    },
+    {
+      "id": "marketing-testimonial-sections",
+      "group": "marketing",
+      "reference": "Testimonial sections",
+      "exports": [
+        "TestimonialSection"
+      ],
+      "status": "implemented-native-contract",
+      "guide": "packages/uikit/docs/catalog-completion.md",
+      "validation": "test:native:all"
+    }
+  ]
+}

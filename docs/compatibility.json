@@ -1,0 +1,1398 @@
+{
+  "schemaVersion": 1,
+  "project": "gpuixKit",
+  "package": "@mirai/gpuix-kit",
+  "packageVersion": "0.19.0",
+  "verifiedAt": "2026-09-14",
+  "runtime": {
+    "bun": "1.4.2",
+    "react": "19.2.4",
+    "gpuixReact": "0.7.0",
+    "gpuixNative": "0.7.0",
+    "dependencyMode": "published-fixed-versions",
+    "typescript": "5.9.3"
+  },
+  "designReference": {
+    "darwinUiCommit": "17777097f271f779cca380da851ee8f45f559665",
+    "source": "https://github.com/surajmandalcell/darwin-ui",
+    "organization": "https://www.untitledui.com/react/docs/introduction"
+  },
+  "validation": [
+    {
+      "command": "bun run check",
+      "status": "passed",
+      "covers": [
+        "TypeScript public exports",
+        "dependency boundaries",
+        "139 pure rules covering commands, selections/forms/documents, charts/messages/window, slider/calendar, checkbox scopes/token batches, same-day time parsing/steps/bounds and color contrast, bounded slider stops/hit regions/marks and nearest-thumb selection, month/year domains, dual-month windows and deterministic range presets",
+        "Action/path partitioning, identity bounds and enabled keyboard targets",
+        "Hexadecimal/RGBA parsing, byte boundaries, alpha composition, bounded palette identities and keyboard targets",
+        "Visible-only queue timing, independent pause reasons, bounded upserts/revisions, timer suspension/disposal, task validation/actions and progress summaries",
+        "10 token-input rules: normalized local matching, bounded catalog identity/metadata, immutable additions/renames, transformed factory collisions, protected clear and page bounds",
+        "10 overlay/modal rules: child-first mounting, stable order, replay/no-op removal, subscriptions, immutable snapshots, constrained geometry and safe prompt validation",
+        "12 source/navigation rules: bounded identities, collapse visibility, disabled keyboard targets, focus fallback, immutable updates, mixed-height scroll and responsive pane budgets",
+        "Collection identity/layout/2D targets and lazy tree hidden-node/cycle/depth/revision rules (14 tests added in v0.16)",
+        "17 new filter/view tests for catalog bounds, typed operators, decimal/date/enum/boolean validation, editable invalid drafts, snapshots and names; 139 total tests in 17 files"
+      ]
+    },
+    {
+      "command": "bun run test:ui",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "viewport": [
+        1320,
+        920
+      ],
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "theme changes retain drafts",
+        "native pointer and keyboard controls",
+        "disabled choices",
+        "Select escape",
+        "Dialog Tab and editor focus",
+        "Dialog focus restoration",
+        "Dialog Escape",
+        "background wheel isolation",
+        "page slicing",
+        "Tabs",
+        "Accordion",
+        "Tooltip keyboard",
+        "Toast"
+      ]
+    },
+    {
+      "command": "bun run test:ui:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "viewport": [
+        1000,
+        720
+      ],
+      "themes": [
+        "dark",
+        "light"
+      ]
+    },
+    {
+      "command": "bun run test:live",
+      "status": "passed",
+      "surface": "real macOS window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard theme change",
+        "dark/light screenshot",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:package",
+      "status": "passed",
+      "surface": "independent temporary Bun workspace",
+      "covers": [
+        "local tgz",
+        "licenses included",
+        "tests excluded",
+        "standalone TypeScript import",
+        "native rendering",
+        "v0.4 Studio subpath exports and shipped API documentation",
+        "v0.5 slider/calendar subpaths and docs",
+        "packaged Slider native keyboard interaction",
+        "v0.6 checkbox/tags subpaths, token rules and API docs",
+        "packaged indeterminate Checkbox native activation",
+        "v0.7 time-input/time-model subpaths and shipped API documentation",
+        "packaged TimeField native valid Enter commit",
+        "v0.8 slider track/mark/readOnly API and shipped documentation",
+        "packaged native Slider track click and mark rendering",
+        "v0.9 period-picker/period-model/date-range/date-range-model public subpaths and docs",
+        "packaged native MonthPicker pointer selection",
+        "v0.10 actions/action-model subpaths and shipped API documentation",
+        "Packaged native SplitButton primary click and WorkspaceSwitcher selected-page keyboard navigation",
+        "v0.11 color/color-model exports and shipped API documentation",
+        "Packaged native palette pointer selection and normalized ColorField Enter commit",
+        "v0.12 notifications/notification-model/task-progress/task-model public exports and shipped documentation",
+        "Packaged native notification dismissal and controlled task pause intent; spread/key ordering avoids unsupported createElement import",
+        "v0.13 token-input/token-input-model exports and shipped API documentation",
+        "Packaged native suggestion pointer selection and EditableTag Enter rename preserving ID",
+        "v0.14 modal/modal-model/overlay-model exports and shipped API documentation",
+        "Packaged native confirmation, PromptDialog Enter commit and top-aligned Sheet bounds",
+        "v0.15 source-list/source-list-model/navigation-split/navigation-split-model exports and shipped API documentation",
+        "Packaged native source pointer/keyboard selection, disabled-row skip, two-column layout and sidebar width intent",
+        "v0.16 resource-state/async-list/collection/collection-model/lazy-tree/lazy-tree-model public exports and shipped API documentation",
+        "Packaged native collection keyboard skip, lazy tree load intent and resource retry",
+        "v0.17 filters/filter-model public exports and shipped API documentation",
+        "Packaged native FilterPanel draft Apply and SavedViewPicker create intent with filter snapshot verification"
+      ]
+    },
+    {
+      "command": "bun run test:desktop",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light",
+        "sidebar grouping/expansion/slim/dual-tier",
+        "horizontal pointer drag and keyboard bounds",
+        "search single/multiple selection",
+        "disabled options and commands",
+        "dropdown submenu and right-click ContextMenu",
+        "palette initial search focus and restoration",
+        "numeric/date controls",
+        "Inspector hide/show",
+        "Popover outside dismissal retains clicked editor focus"
+      ]
+    },
+    {
+      "command": "bun run test:desktop:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same desktop interaction assertions",
+        "dark/light screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:desktop:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "disabled/loading/empty selections",
+        "stepper bound",
+        "vertical pointer drag/cancel/collapse",
+        "nested Dialog selection Escape",
+        "50-row search mount limit",
+        "long-list keyboard highlight visibility"
+      ]
+    },
+    {
+      "command": "bun run test:live:desktop",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard dark/light theme switching",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:workbench",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light and retained draft",
+        "range and cross-page selection",
+        "disabled rows",
+        "global sort/filter before paging",
+        "column pointer/keyboard resizing",
+        "cell validation and commit",
+        "form error focus",
+        "native code and diff collapse",
+        "file state callbacks",
+        "tree navigation",
+        "document add/close/reorder"
+      ]
+    },
+    {
+      "command": "bun run test:workbench:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same workbench interaction assertions",
+        "visible pagination and dark/light screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:workbench:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "empty/loading/disabled",
+        "pending submit lock and read-only fields",
+        "Promise rejection feedback",
+        "error focus",
+        "lazy tree requests",
+        "document close focus",
+        "20-document keyboard overflow"
+      ]
+    },
+    {
+      "command": "bun run test:live:workbench",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "theme changes",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:studio",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light and retained drafts",
+        "line/area/grouped/signed stacked bar rendering",
+        "legend toggle and category keyboard selection",
+        "pie/donut proportions and legend selection",
+        "activity actions and load more",
+        "message retry intent, partial stream stop, reply and attachment metadata",
+        "earlier messages and controlled follow-tail",
+        "native window dimensions"
+      ]
+    },
+    {
+      "command": "bun run test:studio:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same Studio interaction assertions",
+        "dark/light screenshots",
+        "visible message composer and chart labels"
+      ]
+    },
+    {
+      "command": "bun run test:studio:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "loading/empty/invalid charts",
+        "fractional activeIndex ignored",
+        "initial pie Left selects last slice",
+        "Tab leaves invalid pie chart",
+        "empty activity and messages",
+        "Shift+Enter newline",
+        "pending send lock and read-only input",
+        "Promise rejection preserves controlled draft",
+        "length/disabled/pending attachments block send",
+        "attachment-only snapshot",
+        "unmount before rejection"
+      ]
+    },
+    {
+      "command": "bun run test:live:studio",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard dark/light switching",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun install --offline --ignore-scripts --frozen-lockfile",
+      "status": "passed",
+      "covers": [
+        "local fixed-version dependency lockfile"
+      ]
+    },
+    {
+      "command": "bun run test:controls",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light themes and retained draft",
+        "horizontal and vertical thumb dragging",
+        "Escape cancel and commit counts",
+        "range clamping without crossing",
+        "decimal steps and disabled sliders",
+        "calendar leap date and keyboard month navigation",
+        "range disabled interior dates",
+        "picker initial grid focus, Escape restoration and clear",
+        "partial range remains open until completed"
+      ]
+    },
+    {
+      "command": "bun run test:controls:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same controls assertions",
+        "dark/light slider/calendar/picker screenshots",
+        "explicit transparent anchored background removes black corners"
+      ]
+    },
+    {
+      "command": "bun run test:controls:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "invalid/constant slider values and invalid months",
+        "external controlled value ownership",
+        "Tab proceeds from slider",
+        "0001 and 9999 date boundaries",
+        "maximum range length and reverse selection",
+        "nested date popup Escape does not close Dialog",
+        "Dialog focus restoration",
+        "disable during drag destroys capture and blocks callbacks"
+      ]
+    },
+    {
+      "command": "bun run test:live:controls",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard dark/light switching",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:choices",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "tri-state transitions and read-only/disabled indicators",
+        "enabled-scope bulk selection preserves protected and out-of-scope IDs",
+        "primary-click-only checkbox changes",
+        "atomic token batches, duplicate/count/custom validation and retained draft",
+        "Shift+Tab enters token navigation",
+        "token arrows, protected deletion and neighbor/input focus",
+        "read-only and disabled collections",
+        "dark/light retain draft"
+      ]
+    },
+    {
+      "command": "bun run test:choices:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same selection/token assertions",
+        "light/dark screenshots",
+        "bounded long-tag width"
+      ]
+    },
+    {
+      "command": "bun run test:choices:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "held activation suppression",
+        "all-disabled scopes and invalid/duplicate IDs",
+        "read-only keyboard navigation",
+        "nested token Escape returns to input before Dialog dismissal",
+        "last-token removal restores editor focus",
+        "Tab does not insert into controlled draft",
+        "rebuilt editor retains editor/Add/following-control focus order",
+        "factory failure preserves entire draft and does not leak exception text"
+      ]
+    },
+    {
+      "command": "bun run test:live:choices",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard dark/light switching",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:time",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light screenshots and retained draft",
+        "raw invalid time draft preserves prior commit",
+        "native Enter/up/down and pointer step buttons",
+        "min/max and unavailable-hour skipping",
+        "full-day 1440-minute data mounts exactly eight rows",
+        "list Home/End/Page keys and pointer pagination",
+        "picker keyboard/pointer selection, clear, Escape and focus restoration"
+      ]
+    },
+    {
+      "command": "bun run test:time:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same time assertions",
+        "dark/light time and popup screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:time:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "invalid configuration, empty candidates and read-only controls",
+        "held activation and secondary mouse button do not select",
+        "nested and empty popup Escape precedes outer Dialog",
+        "native Tab preserves draft and recreated editor focus order",
+        "disable while open closes popup"
+      ]
+    },
+    {
+      "command": "bun run test:live:time",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard dark/light switching",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:tracks",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light screenshots and retained draft",
+        "horizontal/vertical native track clicks",
+        "track selection restores thumb keyboard focus",
+        "nearest and coincident range thumb behavior",
+        "primary-only track selection",
+        "read-only/disabled controls",
+        "thumb drag Escape rollback and commit regression",
+        "mark labels and value-axis direction"
+      ]
+    },
+    {
+      "command": "bun run test:tracks:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same track assertions",
+        "dark/light screenshots and label layout"
+      ]
+    },
+    {
+      "command": "bun run test:tracks:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "201-stop cap and fine-step operation without trackPress",
+        "invalid marks and constant value",
+        "external controlled ownership",
+        "non-aligned maximum and equal-distance preferred thumb",
+        "bounded and centered long labels",
+        "dense labels omitted while tick marks remain",
+        "native hit regions after ancestor scrolling",
+        "read-only Tab and Dialog Escape",
+        "read-only change during drag destroys capture without commit"
+      ]
+    },
+    {
+      "command": "bun run test:live:tracks",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard navigation to Tracks and marks",
+        "keyboard dark/light switching",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:dates",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light screenshots and retained draft",
+        "month and year selection with keyboard paging and disabled months",
+        "existing Calendar month/year navigation without implicit date selection",
+        "cross-month keyboard focus handoff and shifted dual-month window",
+        "hidden adjacent-month duplicate cells",
+        "cross-month range draft, presets, Apply/Cancel/Clear",
+        "range Dialog cancel/reopen/apply and trigger focus restoration"
+      ]
+    },
+    {
+      "command": "bun run test:dates:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "same date workflow assertions",
+        "dark/light screenshots and scrolling to panel actions"
+      ]
+    },
+    {
+      "command": "bun run test:dates:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "invalid month/year configurations and read-only/disabled choices",
+        "0001/9999 domains and last partial year page",
+        "vertical dual-month layout and bidirectional keyboard handoff",
+        "disabled dates inside a range and maximum duration",
+        "invalid/duplicate/unavailable presets",
+        "explicit external value replaces panel draft",
+        "year/month/date/Dialog and Popover Escape layers",
+        "calendar-to-footer Tab order after year/month navigation",
+        "Clear moves focus to Cancel when its own button becomes disabled"
+      ]
+    },
+    {
+      "command": "bun run test:live:dates",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard dark/light switching",
+        "period selector screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:actions",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Six action/navigation components and retained editor draft",
+        "Disabled actions, group arrows, split primary/secondary callbacks",
+        "Six-row menu pagination, Home/End and target visibility",
+        "Path overflow, controlled workspace selection, account actions and trigger focus restoration"
+      ]
+    },
+    {
+      "command": "bun run test:actions:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Same six-component interactions and bounded layout screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:actions:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "40-workspace list mounts one six-row page and focuses selected item",
+        "Collection shrink clamps page; disabled active item repairs focus",
+        "Empty, all-disabled pages, readOnly, loading and invalid identities",
+        "Held activation and right-pointer suppression",
+        "Nested Dialog Escape and vertical group navigation",
+        "All-disabled page keyboard exit and final-page PageDown focus"
+      ]
+    },
+    {
+      "command": "bun run test:live:actions",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "Startup, Chinese text injection, dark/light keyboard switching, screenshots and close"
+      ]
+    },
+    {
+      "command": "bun run test:colors",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Six native color components, hex drafts and normalized commit",
+        "RGB/alpha keyboard channels and palette pointer/paging",
+        "ColorWell whole-button and swatch-area click",
+        "Picker Apply/Cancel/Clear, retained app draft and trigger focus"
+      ]
+    },
+    {
+      "command": "bun run test:colors:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Same native color interactions and bounded picker screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:colors:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "96-color palette mounts one 12-cell page; collection shrink repairs cursor",
+        "Invalid, empty, disabled, readOnly and opaque-only states",
+        "External value replaces picker draft; outside click cancels and preserves editor focus",
+        "Tab suppresses native tab insertion and skips hidden controls",
+        "Nested Dialog Escape and invalid palette Escape route",
+        "Native channel drag Escape rollback, mouse release restores keyboard focus, Tab cancels and advances"
+      ]
+    },
+    {
+      "command": "bun run test:live:colors",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "Startup, Chinese text injection, keyboard dark/light switching, screenshots and close"
+      ]
+    },
+    {
+      "command": "bun run test:notifications",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "dark/light",
+        "queue promotion/dismiss/undo",
+        "task pause/resume/cancel/retry and current-page mounting",
+        "compact task summary bounds"
+      ]
+    },
+    {
+      "command": "bun run test:notifications:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "dark/light",
+        "notification and task interactions",
+        "task summary width/height bounds"
+      ]
+    },
+    {
+      "command": "bun run test:notifications:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720 with injected monotonic clock",
+      "covers": [
+        "visible timing and hover/keyboard pauses",
+        "pending duplicate lock and failure/retry",
+        "revision replacement and unmounted busy/hover cleanup",
+        "expired undo rejects stale completion",
+        "controlled task actions without automatic status changes",
+        "empty/loading/invalid/disabled/page bounds",
+        "floating viewport width bounds"
+      ]
+    },
+    {
+      "command": "bun run test:live:notifications",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard light/dark change",
+        "screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:tokens",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "light/dark",
+        "catalog keyword search and paging",
+        "suggestion identity/free creation and removal",
+        "rename duplicate/cancel/commit and stable ID",
+        "protected clear",
+        "picker draft Apply/Cancel/Escape and visible footer bounds"
+      ]
+    },
+    {
+      "command": "bun run test:tokens:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "light/dark",
+        "same six-component interaction sequence",
+        "wrapped gallery and popup Apply visibility"
+      ]
+    },
+    {
+      "command": "bun run test:tokens:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "bounded pages and all-disabled-page keyboard behavior",
+        "held activation and disabled/readOnly",
+        "loading/error/retry and invalid options",
+        "catalog collisions and native Tab draft preservation",
+        "external rename cancellation and focus restoration",
+        "protected clear and empty/loading collections",
+        "panel external snapshot replacement and Cancel reset",
+        "nested Dialog/Picker Escape and trigger restoration",
+        "long text bounds"
+      ]
+    },
+    {
+      "command": "bun run test:live:tokens",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "startup",
+        "Chinese text injection",
+        "keyboard theme changes",
+        "dark/light screenshots",
+        "close"
+      ]
+    },
+    {
+      "command": "bun run test:modals",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Six modal components, initial focus and restoration",
+        "Prompt validation and exact application acknowledgement",
+        "Sheet/Drawer geometry and fixed footer",
+        "Nested color popup and child Drawer dismissal",
+        "Controlled progress pause/resume/cancel"
+      ]
+    },
+    {
+      "command": "bun run test:modals:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Same six-component interaction assertions",
+        "Window edge bounds and screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:modals:states",
+      "status": "passed",
+      "surface": "native TestRenderer",
+      "covers": [
+        "Duplicate/pending locks, rejection/retry, revision and unmount stale-result isolation",
+        "Prompt drafts, Tab preservation and external replacement",
+        "Empty and pending modal fallback focus",
+        "Sibling pointer shielding and explicit focus contract",
+        "Nested initial focus, child close and whole-branch restore",
+        "Left drawer, long titles and bounded large requests",
+        "Progress cancellation intent does not mutate task"
+      ]
+    },
+    {
+      "command": "bun run test:live:modals",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "Startup",
+        "Chinese text injection",
+        "Keyboard dark/light theme switching",
+        "Screenshots",
+        "Close"
+      ]
+    },
+    {
+      "command": "bun run test:sidebars",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Mail three-column and Files source examples",
+        "Group collapse, source selection and disabled skip",
+        "Trailing action keyboard entry/return and application-owned deletion fallback",
+        "Pointer and keyboard sidebar/Inspector width changes",
+        "Hidden preference retention and controlled draft preservation",
+        "Fixed header/search/footer and long source list scroll"
+      ]
+    },
+    {
+      "command": "bun run test:sidebars:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "covers": [
+        "Same source/action/drag assertions",
+        "Inspector automatically yields to source/list/detail",
+        "Column and fixed-slot bounds"
+      ]
+    },
+    {
+      "command": "bun run test:sidebars:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720; 500px/640px layout budgets",
+      "covers": [
+        "Empty/loading/disabled/invalid collections and stable mutation fallback",
+        "Collapsed selection retention and manual activation mode",
+        "Single Tab entry, disabled skip, held-key suppression and visible scroll target",
+        "Standalone source row/header and inactive selection color",
+        "Modal Tab order excludes row action nodes",
+        "Explicit focus restoration for removed source, registered editor and divider",
+        "Native editor test uses forwarded Escape to register focus; pointer/End alone are not assumed observable",
+        "Collapse or disable during drag destroys capture",
+        "Sidebar resizing reserves detail minimum and does not hide itself"
+      ]
+    },
+    {
+      "command": "bun run test:live:sidebars",
+      "status": "passed",
+      "surface": "real macOS ARM64 window",
+      "covers": [
+        "Startup",
+        "Chinese text injection",
+        "Keyboard dark/light theme changes",
+        "Screenshots",
+        "Close"
+      ]
+    },
+    {
+      "command": "bun run test:collections",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "Grid selection/disabled skip/activation/End scroll",
+        "Branch failure/retry/collapse and local load-more failure/append/end",
+        "List loading/empty/refreshing and dark/light bounds/screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:collections:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "Same collection scenario at narrow width",
+        "Dark/light grid/list/resource/error screenshots and visible actions"
+      ]
+    },
+    {
+      "command": "bun run test:collections:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "Duplicate request locks, generic rejection/retry, resource revisions/stale/unmount",
+        "Pending root focus and modal Tab/Escape forwarding",
+        "Grid 2D/range/page selection retention, disabled/malformed/empty/all-disabled mutation and scroll",
+        "Async list empty/loading/error/disabled retry/refresh transitions",
+        "Independent concurrent tree requests, collapse-retained locks, node revisions/removal, loaded-empty and external-loading guards"
+      ]
+    },
+    {
+      "command": "bun run test:live:collections",
+      "status": "passed",
+      "surface": "real macOS window",
+      "covers": [
+        "Startup, Chinese text injection, keyboard light/dark theme switch, screenshots and close; no live simulateClick"
+      ]
+    },
+    {
+      "command": "bun run test:filters",
+      "status": "passed",
+      "surface": "native TestRenderer 1320x920",
+      "covers": [
+        "Draft/apply/cancel and all/any typed conditions",
+        "Saved view failure/retry/create/update/rename/remove, read-only protection and six-row menu pagination",
+        "Summary removal, bounded actions and dark/light screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:filters:narrow",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "Same full filter/view scenario at narrow window width",
+        "Dark/light conditions, failed-save feedback, read-only, menu and empty screenshots"
+      ]
+    },
+    {
+      "command": "bun run test:filters:states",
+      "status": "passed",
+      "surface": "native TestRenderer 1000x720",
+      "covers": [
+        "Field/operator reset; editable invalid/long decimal/date/enum/boolean drafts",
+        "12-condition limit, condition paging, removal and disabled/malformed collections",
+        "Apply/reset/cancel and external expression draft snapshots",
+        "Saved-view shared pending lock, generic failure, stale revision, unmount, read-only/disabled/duplicate/invalid guards",
+        "Native child Tab event isolation, pending modal Tab/Escape, nested menu Escape and stable Apply focus"
+      ]
+    },
+    {
+      "command": "bun run test:live:filters",
+      "status": "passed",
+      "surface": "real macOS window",
+      "covers": [
+        "Startup, Chinese text injection, keyboard light/dark theme changes, screenshots and close; no live simulateClick"
+      ]
+    }
+  ],
+  "platforms": {
+    "macos-arm64": "passed",
+    "windows": "not-run",
+    "linux": "not-run"
+  },
+  "limits": [
+    "No browser components, DOM or CSS runtime",
+    "No physical background blur or spring animations",
+    "No screen-reader accessibility certification",
+    "Chinese text injection is not IME composition testing",
+    "No live simulateClick tests because of known GPUIX 0.7.0 native reentrancy",
+    "No package publication or system setting changes",
+    "No full Darwin or Untitled UI component parity; missing components documented in package README",
+    "Programmatic focus/blur events were absent in 0.7.0 TestRenderer; managed keyboard and pointer focus is used",
+    "Dialog and UIKit Popover now share a renderer-local managed overlay stack; native Select/Tooltip, raw anchored, OS windows and cross-window arbitration are outside its scope",
+    "ContextMenu anchors to its trigger region; submenus navigate within one popup",
+    "Command shortcut strings are display labels; no shortcut registration or conflict management",
+    "DateField is a calendar-date text field, not Calendar/DatePicker",
+    "Search lists mount at most 50 matches; caller owns remote paging",
+    "0.7.0 scroll-node bounds include self scroll offset; viewport assertions compensate",
+    "ListView/TreeView/DataGrid render caller-paged data; no collection virtualization or row drag/drop",
+    "DataGrid supports string cell edits, not a spreadsheet or async persistence layer",
+    "Document dirty-close confirmation belongs to the application",
+    "Form controller supports flat string fields and synchronous validation only",
+    "File controls emit application intents; no system picker, upload or drop handling",
+    "Charts use bounded categorical data (200 categories / 12 series, 50 pie slices), not continuous/time axes, zoom, export or virtualized rendering",
+    "Pie selection uses legend/keyboard; direct wedge hit testing is not implemented",
+    "Messages and activity render application-provided windows; no virtual history or prepend scroll anchoring",
+    "Composer emits snapshot/stop/attachment intents; no network, file access or persistence",
+    "Message followTail is application-controlled and not disabled automatically by wheel input",
+    "Dashboard/Conversation/Settings are layout foundations; Settings lacks a complete independent scenario test",
+    "Window size is native-tested; title/activation only have forwarding-rule tests, not real-window outcome verification",
+    "Platform false flags mean unmapped UIKit capabilities, not unsupported OS features",
+    "Internal component labels are partly English; no complete localization layer",
+    "Slider/RangeSlider support thumb dragging, keyboard, optional bounded track clicks and marks; no logarithmic scales or touch gestures",
+    "Calendar and date pickers use Gregorian dates; optional month/year navigation and separate dual-month/range preset controls exist, but no date-time/timezone or AX calendar semantics",
+    "Calendar values and visible month are separately controlled; keyboard browsing may enter unavailable dates but cannot select them",
+    "Date ranges check every included date and are bounded by maxRangeDays (default 366, maximum 3660)",
+    "Slider precision uses 14 significant digits; it is not an arbitrary-precision numeric system",
+    "CheckboxGroup toggles only current enabled options; no server-wide query selection or AX checkbox certification",
+    "Original TokenField retains bounded synchronous batch entry; v0.13 separate combinations add suggestions/rename/drafts; no drag/drop, range selection or virtualization",
+    "GPUIX editor consumes Backspace and left/right before JSX; TokenField uses Shift+Tab to enter tokens",
+    "TokenField suppresses native Tab insertion by rebuilding its inner editor, resetting native undo/caret history while preserving controlled draft and component focus order",
+    "Input/Textarea resetKey is explicit native editor recreation, not a general IME/undo compatibility guarantee",
+    "Time controls use same-day HH:mm with minute steps aligned from min; no seconds, AM/PM, overnight ranges, date-time combination, timezone/DST conversion or system time panel",
+    "TimeList stores at most 1440 pure options and mounts eight rows per page; unavailable times are omitted",
+    "TimeField keeps application-owned raw drafts and commits only valid Enter or changed steps; Tab editor recreation resets native undo/caret history",
+    "Time disabled predicates must be synchronous and pure; no async availability or persistence",
+    "Slider trackPress defaults false and supports at most 201 stops; finer steps require disabling trackPress, and subpixel stops may require keyboard selection",
+    "Slider marks support at most 51 finite unique values; labels are bounded/truncated or omitted when dense; no label Tooltip or AX semantics",
+    "Slider track clicks are discrete selection, not press-and-drag from the empty track; hit-region boundaries use native target resolution",
+    "Dual calendars render exactly two adjacent months; explicit horizontal/vertical layout, no automatic responsive breakpoint or arbitrary month count",
+    "Dual month 9999-12 display clamps to 9999-11/12 without a mount-time onMonthChange callback",
+    "Range presets are bounded to 24 and use an explicit reference date; no system clock, asynchronous availability, or implicit clipping of invalid ranges",
+    "DateRangePanel has local draft Apply/Cancel semantics, not async persistence; external date value changes replace the draft and Cancel does not roll back visible month",
+    "DateRangeDialog inherits the managed Dialog layer; it does not expose a separate global modal service",
+    "Actions use flat six-row paginated menus; Popover inherits managed layering, while keyboard shortcut arbitration remains absent",
+    "Action/workspace collections are bounded to 100, groups to 12 and paths to 64; no remote lookup or virtualization",
+    "Toolbar visibleCount and path segment widths are application-controlled; no automatic width measurement or history/router integration",
+    "run callbacks emit application intent; loading is controlled and UIKit does not await, persist or handle authentication/sign-out",
+    "Windows/Linux, full IME and AX remain unverified for the new action/navigation combinations",
+    "Colors use 8-bit sRGB hex/RGBA; no CSS named/rgb/hsl strings, system sampling, gradients, P3 or ICC conversion",
+    "ColorField/ColorPanel onValueChange may emit invalid text drafts; ColorPicker isolates drafts and commits only Apply or explicit Clear",
+    "Palette data is capped at 96 entries, with two rows per page and 2-8 explicit columns; no remote search, drag reorder or persistence",
+    "Transparency is precomposited over a fixed checkerboard for preview; no display color-management certification",
+    "ColorPanel uses zero-height clipping and disables hidden focus targets because display:none did not hide the tested native subtree",
+    "Slider capture now owns temporary keyboard focus during nested drag and restores thumb/scope focus on finish or cancel",
+    "ColorField native Tab recreation resets editor undo/caret history; Windows/Linux, full IME and AX remain unverified",
+    "Notification queues are application-local memory; one viewport per queue, capacity <=100 and visible <=5; no OS notifications or history persistence",
+    "Hook queue options are initialization-only; external queue owners dispose controllers and own background visibility suspension",
+    "Notification keyboard/error pauses require explicit Resume; no accessibility announcement or global modal integration",
+    "TaskList accepts <=200 unique tasks and mounts <=10 per page; application owns jobs, cancellation and state transitions; pending guards are view-local",
+    "ProgressRing unknown mode is a static arc; no spinner/progress animation",
+    "Token suggestions use at most 500 application-provided entries and mount at most 8 rows; remote request scheduling and stale result handling belong to the application",
+    "TokenCombobox/Picker callbacks are synchronous controlled updates, not asynchronous persistence; free creation treats the whole draft as one label",
+    "TokenEditor uses maxTokens <=100 and <=8 rows per page; changing page discards unsaved local rename drafts; clear covers the entire supplied collection while preserving disabled/nonremovable tokens",
+    "TokenPicker inherits managed Popover layering; compact two-row candidates keep ordinary Apply/Cancel visible, large selections require scrolling",
+    "New token inputs inherit Tab editor recreation and native undo/caret reset; no full IME or AX semantics",
+    "Modal focus restoration requires explicit refs and parent React context; independent siblings do not automatically choose a surviving sibling focus target",
+    "Sheet/Drawer are window-contained JSX surfaces, not AppKit NSWindow sheets or nonmodal inspectors",
+    "Confirm/Prompt async identity guards protect UI callbacks only; applications own operation cancellation and record revision",
+    "Prompt validation is synchronous, bounded to 10000 UTF-16 code units, and exact submitted-value acknowledgement is distinguished from external replacement",
+    "Prompt native Tab recreation resets editor undo/caret history; pending and generic labels are not fully localized",
+    "ProgressDialog emits task action intent only; unknown progress is a static arc and background execution belongs to the application",
+    "SourceListSidebar is flat grouped navigation capped at 20 groups/100 items, all mounted; no virtualization, nested outline, multi-selection or drag/drop",
+    "Source search and header/footer slots are application-owned; disabled/loading lock the source list, not arbitrary slot controls",
+    "Source collapse and collection changes do not silently rewrite application selection; onValueChange emits explicit navigation/activation only",
+    "SourceListRow action label is a short visible label; supplied icons are not bundled SF Symbols and the application owns icon color",
+    "NavigationSplitView requires explicit available width/height; temporary pane removal preserves preferences but unmounts content, so drafts and requests belong above the layout",
+    "Focus-region restoration uses UIKit recorded focus and an explicit fallback ref, not OS/AX queries; GPUIX internal editor pointer/End and unforwarded native focus changes remain unobservable",
+    "windowActive is an application-provided visual flag; no OS window activation, vibrancy, Liquid Glass or system accent service",
+    "Mail and Files gallery modes are in-memory navigation examples, not complete mail/file applications or connected services",
+    "CollectionView is a bounded 100-item page with fixed card rows, 1-6 columns and explicit available width; no virtualization, drag/drop or interactive children beneath the hit layer",
+    "LazyTreeView validates all loaded nodes including collapsed branches, up to 200 nodes and 9 levels; no automatic mount/externally expanded loading, branch pagination or scroll anchoring",
+    "Resource request locks isolate UI state by identity/revision/action token; actual cancellation, stale response validation and application data mutations remain caller-owned",
+    "AsyncListView unmounts the body for initial loading/error/empty; refreshing keeps items; native focus/scroll restoration across state replacement is not guaranteed",
+    "Collections examples use in-memory Promise failures/successes and do not access file or network services",
+    "Filter expressions support one all/any level, up to 24 fields/12 conditions; no nested groups, range/multiple-value relations or remote query execution",
+    "FilterBuilder mounts 1-3 condition rows per page and expects an adequately sized parent area (560 px recommended); no internal vertical scroll or universal narrow-container guarantee",
+    "FilterPanel owns a draft that resets with external expression/field/revision changes; Cancel emits an intent, while application owns closing or resetting the panel",
+    "SavedViewPicker supports up to 50 application-owned views and six-row menus; UI read-only/disabled guards are not server authorization",
+    "Saved-view operations share a snapshot lock and clone filter values; database writes, cancellation, stale responses and actual view collection updates remain caller-owned",
+    "Native focus order follows child-first registration; filters isolate ancestor keydown redispatch; general GPUIX editor Tab/IME/clipboard behavior is not replaced"
+  ],
+  "artifacts": [
+    "artifacts/0.19.0-SHA256SUMS.txt",
+    "artifacts/actions-account-dark-narrow.png",
+    "artifacts/actions-account-dark.png",
+    "artifacts/actions-account-light-narrow.png",
+    "artifacts/actions-account-light.png",
+    "artifacts/actions-dark-narrow.png",
+    "artifacts/actions-dark.png",
+    "artifacts/actions-light-narrow.png",
+    "artifacts/actions-light.png",
+    "artifacts/actions-live-dark.png",
+    "artifacts/actions-live-light.png",
+    "artifacts/actions-overflow-dark-narrow.png",
+    "artifacts/actions-overflow-dark.png",
+    "artifacts/actions-overflow-light-narrow.png",
+    "artifacts/actions-overflow-light.png",
+    "artifacts/catalog-calendar-dark-narrow.png",
+    "artifacts/catalog-calendar-dark.png",
+    "artifacts/catalog-calendar-light-narrow.png",
+    "artifacts/catalog-calendar-light.png",
+    "artifacts/catalog-charts-dark-narrow.png",
+    "artifacts/catalog-charts-dark.png",
+    "artifacts/catalog-charts-light-narrow.png",
+    "artifacts/catalog-charts-light.png",
+    "artifacts/catalog-editor-dark-narrow.png",
+    "artifacts/catalog-editor-dark.png",
+    "artifacts/catalog-editor-light-narrow.png",
+    "artifacts/catalog-editor-light.png",
+    "artifacts/catalog-forms-dark-narrow.png",
+    "artifacts/catalog-forms-dark.png",
+    "artifacts/catalog-forms-light-narrow.png",
+    "artifacts/catalog-forms-light.png",
+    "artifacts/catalog-gradient-dark-narrow.png",
+    "artifacts/catalog-gradient-dark.png",
+    "artifacts/catalog-gradient-light-narrow.png",
+    "artifacts/catalog-gradient-light.png",
+    "artifacts/catalog-identity-dark-narrow.png",
+    "artifacts/catalog-identity-dark.png",
+    "artifacts/catalog-identity-light-narrow.png",
+    "artifacts/catalog-identity-light.png",
+    "artifacts/catalog-live-dark.png",
+    "artifacts/catalog-live-light.png",
+    "artifacts/catalog-marketing-dark-narrow.png",
+    "artifacts/catalog-marketing-dark.png",
+    "artifacts/catalog-marketing-light-narrow.png",
+    "artifacts/catalog-marketing-light.png",
+    "artifacts/catalog-media-dark-narrow.png",
+    "artifacts/catalog-media-dark.png",
+    "artifacts/catalog-media-light-narrow.png",
+    "artifacts/catalog-media-light.png",
+    "artifacts/catalog-sections-dark-narrow.png",
+    "artifacts/catalog-sections-dark.png",
+    "artifacts/catalog-sections-light-narrow.png",
+    "artifacts/catalog-sections-light.png",
+    "artifacts/choices-dark-narrow.png",
+    "artifacts/choices-dark.png",
+    "artifacts/choices-light-narrow.png",
+    "artifacts/choices-light.png",
+    "artifacts/choices-live-dark.png",
+    "artifacts/choices-live-light.png",
+    "artifacts/choices-tokens-dark-narrow.png",
+    "artifacts/choices-tokens-dark.png",
+    "artifacts/choices-tokens-light-narrow.png",
+    "artifacts/choices-tokens-light.png",
+    "artifacts/collections-empty-light-narrow.png",
+    "artifacts/collections-empty-light.png",
+    "artifacts/collections-grid-dark-narrow.png",
+    "artifacts/collections-grid-dark.png",
+    "artifacts/collections-grid-light-narrow.png",
+    "artifacts/collections-grid-light.png",
+    "artifacts/collections-list-dark-narrow.png",
+    "artifacts/collections-list-dark.png",
+    "artifacts/collections-list-light-narrow.png",
+    "artifacts/collections-list-light.png",
+    "artifacts/collections-live-dark.png",
+    "artifacts/collections-live-light.png",
+    "artifacts/collections-load-error-dark-narrow.png",
+    "artifacts/collections-load-error-dark.png",
+    "artifacts/collections-loading-light-narrow.png",
+    "artifacts/collections-loading-light.png",
+    "artifacts/collections-resource-error-dark-narrow.png",
+    "artifacts/collections-resource-error-dark.png",
+    "artifacts/collections-states.png",
+    "artifacts/collections-tree-error-dark-narrow.png",
+    "artifacts/collections-tree-error-dark.png",
+    "artifacts/colors-dark-narrow.png",
+    "artifacts/colors-dark.png",
+    "artifacts/colors-light-narrow.png",
+    "artifacts/colors-light.png",
+    "artifacts/colors-live-dark.png",
+    "artifacts/colors-live-light.png",
+    "artifacts/colors-palette-dark-narrow.png",
+    "artifacts/colors-palette-dark.png",
+    "artifacts/colors-picker-dark-narrow.png",
+    "artifacts/colors-picker-dark.png",
+    "artifacts/colors-picker-light-narrow.png",
+    "artifacts/colors-picker-light.png",
+    "artifacts/colors-states.png",
+    "artifacts/controls-calendar-dark-narrow.png",
+    "artifacts/controls-calendar-dark.png",
+    "artifacts/controls-calendar-light-narrow.png",
+    "artifacts/controls-calendar-light.png",
+    "artifacts/controls-dark-narrow.png",
+    "artifacts/controls-dark.png",
+    "artifacts/controls-light-narrow.png",
+    "artifacts/controls-light.png",
+    "artifacts/controls-live-dark.png",
+    "artifacts/controls-live-light.png",
+    "artifacts/controls-picker-dark-narrow.png",
+    "artifacts/controls-picker-dark.png",
+    "artifacts/controls-picker-light-narrow.png",
+    "artifacts/controls-picker-light.png",
+    "artifacts/dates-dialog-dark-narrow.png",
+    "artifacts/dates-dialog-dark.png",
+    "artifacts/dates-dialog-light-narrow.png",
+    "artifacts/dates-dialog-light.png",
+    "artifacts/dates-dual-dark-narrow.png",
+    "artifacts/dates-dual-dark.png",
+    "artifacts/dates-dual-light-narrow.png",
+    "artifacts/dates-dual-light.png",
+    "artifacts/dates-live-dark.png",
+    "artifacts/dates-live-light.png",
+    "artifacts/dates-navigation-light-narrow.png",
+    "artifacts/dates-navigation-light.png",
+    "artifacts/dates-periods-dark-narrow.png",
+    "artifacts/dates-periods-dark.png",
+    "artifacts/dates-periods-light-narrow.png",
+    "artifacts/dates-periods-light.png",
+    "artifacts/dates-range-dark-narrow.png",
+    "artifacts/dates-range-dark.png",
+    "artifacts/desktop-command.png",
+    "artifacts/desktop-dark-narrow.png",
+    "artifacts/desktop-dark.png",
+    "artifacts/desktop-dual-tier.png",
+    "artifacts/desktop-light-narrow.png",
+    "artifacts/desktop-light.png",
+    "artifacts/desktop-live-dark.png",
+    "artifacts/desktop-live-light.png",
+    "artifacts/desktop-slim.png",
+    "artifacts/filters-conditions-dark-narrow.png",
+    "artifacts/filters-conditions-dark.png",
+    "artifacts/filters-empty-light-narrow.png",
+    "artifacts/filters-empty-light.png",
+    "artifacts/filters-initial-dark-narrow.png",
+    "artifacts/filters-initial-dark.png",
+    "artifacts/filters-live-dark.png",
+    "artifacts/filters-live-light.png",
+    "artifacts/filters-menu-light-narrow.png",
+    "artifacts/filters-menu-light.png",
+    "artifacts/filters-readonly-light-narrow.png",
+    "artifacts/filters-readonly-light.png",
+    "artifacts/filters-save-error-dark-narrow.png",
+    "artifacts/filters-save-error-dark.png",
+    "artifacts/gpuixKit-0.18.0-source.tar.gz",
+    "artifacts/gpuixKit-0.19.0-source.tar.gz",
+    "artifacts/input-alignment-dark.png",
+    "artifacts/input-alignment-light.png",
+    "artifacts/input-alignment.json",
+    "artifacts/mirai-gpuix-kit-0.15.0.tgz",
+    "artifacts/mirai-gpuix-kit-0.16.0.tgz",
+    "artifacts/mirai-gpuix-kit-0.17.0.tgz",
+    "artifacts/mirai-gpuix-kit-0.18.0.tgz",
+    "artifacts/mirai-gpuix-kit-0.19.0.tgz",
+    "artifacts/modals-alert-dark-narrow.png",
+    "artifacts/modals-alert-dark.png",
+    "artifacts/modals-alert-light-narrow.png",
+    "artifacts/modals-alert-light.png",
+    "artifacts/modals-confirm-dark-narrow.png",
+    "artifacts/modals-confirm-dark.png",
+    "artifacts/modals-confirm-light-narrow.png",
+    "artifacts/modals-confirm-light.png",
+    "artifacts/modals-dark-narrow.png",
+    "artifacts/modals-dark.png",
+    "artifacts/modals-drawer-dark-narrow.png",
+    "artifacts/modals-drawer-dark.png",
+    "artifacts/modals-drawer-light-narrow.png",
+    "artifacts/modals-drawer-light.png",
+    "artifacts/modals-light-narrow.png",
+    "artifacts/modals-light.png",
+    "artifacts/modals-live-dark.png",
+    "artifacts/modals-live-light.png",
+    "artifacts/modals-nested-dark-narrow.png",
+    "artifacts/modals-nested-dark.png",
+    "artifacts/modals-progress-dark-narrow.png",
+    "artifacts/modals-progress-dark.png",
+    "artifacts/modals-progress-light-narrow.png",
+    "artifacts/modals-progress-light.png",
+    "artifacts/modals-prompt-dark-narrow.png",
+    "artifacts/modals-prompt-dark.png",
+    "artifacts/modals-prompt-light-narrow.png",
+    "artifacts/modals-prompt-light.png",
+    "artifacts/modals-sheet-dark-narrow.png",
+    "artifacts/modals-sheet-dark.png",
+    "artifacts/modals-sheet-light-narrow.png",
+    "artifacts/modals-sheet-light.png",
+    "artifacts/modals-states.png",
+    "artifacts/native-release.json",
+    "artifacts/notifications-dark-narrow.png",
+    "artifacts/notifications-dark.png",
+    "artifacts/notifications-floating.png",
+    "artifacts/notifications-light-narrow.png",
+    "artifacts/notifications-light.png",
+    "artifacts/notifications-live-dark.png",
+    "artifacts/notifications-live-light.png",
+    "artifacts/sidebars-files-dark-narrow.png",
+    "artifacts/sidebars-files-dark.png",
+    "artifacts/sidebars-files-light-narrow.png",
+    "artifacts/sidebars-files-light.png",
+    "artifacts/sidebars-inactive-dark-narrow.png",
+    "artifacts/sidebars-inactive-dark.png",
+    "artifacts/sidebars-inspector-dark-narrow.png",
+    "artifacts/sidebars-inspector-dark.png",
+    "artifacts/sidebars-live-dark.png",
+    "artifacts/sidebars-live-light.png",
+    "artifacts/sidebars-mail-dark-narrow.png",
+    "artifacts/sidebars-mail-dark.png",
+    "artifacts/sidebars-mail-light-narrow.png",
+    "artifacts/sidebars-mail-light.png",
+    "artifacts/sidebars-states.png",
+    "artifacts/studio-area-narrow.png",
+    "artifacts/studio-area.png",
+    "artifacts/studio-bar-narrow.png",
+    "artifacts/studio-bar.png",
+    "artifacts/studio-conversation-narrow.png",
+    "artifacts/studio-conversation.png",
+    "artifacts/studio-dark-narrow.png",
+    "artifacts/studio-dark.png",
+    "artifacts/studio-light-narrow.png",
+    "artifacts/studio-light.png",
+    "artifacts/studio-live-dark.png",
+    "artifacts/studio-live-light.png",
+    "artifacts/studio-messages-dark-narrow.png",
+    "artifacts/studio-messages-dark.png",
+    "artifacts/studio-pie-narrow.png",
+    "artifacts/studio-pie.png",
+    "artifacts/studio-platform-narrow.png",
+    "artifacts/studio-platform.png",
+    "artifacts/studio-stacked-narrow.png",
+    "artifacts/studio-stacked.png",
+    "artifacts/time-dark-narrow.png",
+    "artifacts/time-dark.png",
+    "artifacts/time-light-narrow.png",
+    "artifacts/time-light.png",
+    "artifacts/time-live-dark.png",
+    "artifacts/time-live-light.png",
+    "artifacts/time-picker-dark-narrow.png",
+    "artifacts/time-picker-dark.png",
+    "artifacts/time-picker-light-narrow.png",
+    "artifacts/time-picker-light.png",
+    "artifacts/tokens-dark-narrow.png",
+    "artifacts/tokens-dark.png",
+    "artifacts/tokens-light-narrow.png",
+    "artifacts/tokens-light.png",
+    "artifacts/tokens-live-dark.png",
+    "artifacts/tokens-live-light.png",
+    "artifacts/tokens-picker-dark-narrow.png",
+    "artifacts/tokens-picker-dark.png",
+    "artifacts/tokens-picker-light-narrow.png",
+    "artifacts/tokens-picker-light.png",
+    "artifacts/tokens-states.png",
+    "artifacts/tokens-suggestions-dark-narrow.png",
+    "artifacts/tokens-suggestions-dark.png",
+    "artifacts/tracks-dark-narrow.png",
+    "artifacts/tracks-dark.png",
+    "artifacts/tracks-light-narrow.png",
+    "artifacts/tracks-light.png",
+    "artifacts/tracks-live-dark.png",
+    "artifacts/tracks-live-light.png",
+    "artifacts/uikit-dark-narrow.png",
+    "artifacts/uikit-dark.png",
+    "artifacts/uikit-dialog.png",
+    "artifacts/uikit-light-narrow.png",
+    "artifacts/uikit-light.png",
+    "artifacts/uikit-live-dark.png",
+    "artifacts/uikit-live-light.png",
+    "artifacts/workbench-dark-narrow.png",
+    "artifacts/workbench-dark.png",
+    "artifacts/workbench-files.png",
+    "artifacts/workbench-form.png",
+    "artifacts/workbench-light-narrow.png",
+    "artifacts/workbench-light.png",
+    "artifacts/workbench-list.png",
+    "artifacts/workbench-live-dark.png",
+    "artifacts/workbench-live-light.png",
+    "artifacts/workbench-source.png"
+  ],
+  "maturity": "first-open-source-component-release",
+  "frameworkGoal": "reference-component-contracts-complete-native-depth-remains-documented",
+  "coverageDocument": "docs/untitled-ui-coverage.md",
+  "validationScope": "0.19.0 native component contracts across all 85 reference categories; commercial variants and untested host platforms are not claimed.",
+  "implementationBatch": {
+    "version": "0.19.0",
+    "scope": "all-reference-component-category-contracts",
+    "catalog": "docs/untitled-ui-coverage.md",
+    "remaining": [
+      "npm not published",
+      "Native/editor depth boundaries remain documented separately"
+    ]
+  },
+  "versionPolicy": {
+    "current": "0.19.0",
+    "next": "0.20.0",
+    "rule": "Increment the integer minor version; do not interpret it as a decimal or automatically bump to 1.0.0."
+  },
+  "currentBatchValidation": {
+    "version": "0.19.0",
+    "status": "passed",
+    "pureTests": 178,
+    "pureTestFiles": 20,
+    "publicEntryPoints": 87,
+    "referenceCategories": 85,
+    "nativeScripts": 57,
+    "nativeReport": "docs/releases/native-0.19.0.json",
+    "liveWindow": "passed",
+    "independentPackage": "passed",
+    "inventory": "docs/untitled-ui-coverage.json",
+    "report": "docs/releases/validation-0.19.0.md",
+    "sourceArchive": "passed",
+    "sourceFiles": 281,
+    "inputAlignment": {
+      "status": "passed",
+      "method": "native screenshot ink centers",
+      "plainTextMaxOffsetPx": 0.5,
+      "allGlyphsMaxOffsetPx": 1.25,
+      "command": "bun run test:input-alignment"
+    }
+  },
+  "firstOpenSourceRelease": {
+    "status": "local-catalog-release-validated",
+    "scopeDocument": "docs/plans/first-open-source-release.md",
+    "deliverables": [
+      "native UI components and compositions",
+      "pure interaction and value models",
+      "application callbacks and capability-aware adapter interfaces",
+      "documentation, examples and developer verification"
+    ],
+    "excluded": [
+      "backend query/database/persistence services",
+      "authentication/account/tenant/authorization services",
+      "email/chat/AI execution and task backends",
+      "cloud file storage and collaboration sync",
+      "complete business products"
+    ],
+    "advancedUI": "All reference categories have native contracts; commercial variations, host services and deeper native/editor behaviors retain documented limits.",
+    "publication": "GitHub target explicitly authorized: leyugod/GPUIX-Kit, main branch. Remote delivery and CI are tracked by repository history and Actions. npm not published.",
+    "inventory": "docs/releases/0.19.0.md",
+    "localValidatedAt": "2026-09-14"
+  },
+  "validationEvidenceNote": "The validation array retains per-batch historical details. Consult currentBatchValidation and firstOpenSourceRelease for current release evidence.",
+  "knownLimitations": [
+    "VideoPlayer supplies controls and an injectable surface; no video decoder is bundled.",
+    "RichTextEditor defaults to native block editing; arbitrary inline selections require a dedicated host surface.",
+    "EventCalendar has bounded month/week/day views; no recurrence/timezone/conflict layout engine."
+  ],
+  "repository": "https://github.com/leyugod/GPUIX-Kit"
+}
