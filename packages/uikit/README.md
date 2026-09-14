@@ -1,15 +1,17 @@
 # @mirai/gpuix-kit
 
-用于 GPUIX 0.7.0 + React 19 + Bun 的原生 UIKit 组件库，当前目录补齐版本 0.19.0。Darwin 风格，支持 dark/light 和语义色覆盖；不依赖 CRM 或浏览器。
+用于 GPUIX 0.7.0 + React 19 + Bun 的原生 UIKit 组件库，当前目录补齐版本 0.20.0。Darwin 风格，支持 dark/light 和语义色覆盖；不依赖 CRM 或浏览器。
 
 本版只交付组件、纯模型和适配接口；窗口映射与应用注入实现明确区分。完整 macOS 框架、高级 UI 增强和业务服务不在已完成功能声明中。
 
+[快速开始与应用模板](https://github.com/leyugod/GPUIX-Kit/blob/main/docs/getting-started.md) · [统一组件手册](https://github.com/leyugod/GPUIX-Kit/blob/main/docs/components/index.md)
+
 ## 接入
 
-当前未发布 npm。可将本目录复制到 Bun Workspace 的 packages/uikit，或在库项目运行 `bun run pack` 后安装生成的 `.tgz`：
+通过 GitHub Release 安装固定版本（npm 未发布）：
 
 ```sh
-bun add /absolute/path/mirai-gpuix-kit-0.19.0.tgz
+bun add https://github.com/leyugod/GPUIX-Kit/releases/download/v0.20.0/mirai-gpuix-kit-0.20.0.tgz
 bun add @gpuix/react@0.7.0 react@19.2.4
 ```
 

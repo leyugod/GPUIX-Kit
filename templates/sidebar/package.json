@@ -1,0 +1,23 @@
+{
+  "name": "gpuix-kit-sidebar-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "scripts": {
+    "dev": "bun src/main.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gpuix/react": "0.7.0",
+    "@mirai/gpuix-kit": "https://github.com/leyugod/GPUIX-Kit/releases/download/v0.20.0/mirai-gpuix-kit-0.20.0.tgz",
+    "react": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.5",
+    "@types/react": "19.2.14",
+    "@types/node": "22.20.2",
+    "undici-types": "6.21.0",
+    "typescript": "5.9.3"
+  }
+}

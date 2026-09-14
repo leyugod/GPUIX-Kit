@@ -77,6 +77,7 @@ try {
   for (const script of [
     "check",
     "docs:api:check",
+    "docs:handbook:check",
     "check:catalog",
     "check:release-source",
   ])

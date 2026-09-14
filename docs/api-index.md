@@ -1,6 +1,6 @@
-# Public API index · 0.19.0
+# Public API index · 0.20.0
 
-Generated from package exports and TypeScript symbols. This inventory identifies shipped exports, not a component-completeness score. See [release scope](releases/0.19.0.md) and component guides for behavior and limits.
+Generated from package exports and TypeScript symbols. This inventory identifies shipped exports, not a component-completeness score. See [release scope](releases/0.20.0.md) and component guides for behavior and limits.
 
 ## @mirai/gpuix-kit
 

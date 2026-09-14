@@ -1,3 +1,5 @@
+import { Handbook } from "./handbook";
+import { clipboard } from "./clipboard";
 import { CatalogGallery } from "./catalog";
 import { TablePreferencesGallery } from "./table-preferences";
 import { FiltersGallery } from "./filters";
@@ -55,8 +57,10 @@ render(
     <WorkbenchGallery />
   ) : process.argv.includes("--desktop") ? (
     <DesktopGallery />
-  ) : (
+  ) : process.argv.includes("--legacy") ? (
     <Gallery />
+  ) : (
+    <Handbook clipboard={clipboard} />
   ),
   {
     title: "Mirai UIKit — GPUIX",

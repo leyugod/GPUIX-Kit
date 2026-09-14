@@ -33,6 +33,7 @@ const roots = [
   "docs",
   "scripts",
   "tests",
+  "templates",
 ];
 const required = [
   ".github/workflows/ci.yml",

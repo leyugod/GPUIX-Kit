@@ -167,7 +167,7 @@ const child = spawn(
                                     ? ["--workbench"]
                                     : desktop
                                       ? ["--desktop"]
-                                      : []),
+                                      : ["--legacy"]),
   ],
   {
     stdio: ["pipe", "pipe", "pipe"],

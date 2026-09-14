@@ -1,6 +1,6 @@
 {
   "name": "@mirai/gallery",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "private": true,
   "type": "module",
   "exports": {
@@ -21,7 +21,8 @@
     "./collections": "./src/collections.tsx",
     "./filters": "./src/filters.tsx",
     "./table-preferences": "./src/table-preferences.tsx",
-    "./catalog": "./src/catalog.tsx"
+    "./catalog": "./src/catalog.tsx",
+    "./handbook": "./src/handbook.tsx"
   },
   "scripts": {
     "dev": "bun src/main.tsx",

@@ -17,4 +17,5 @@ jobs:
       - run: bun run check
       - run: bun run check:catalog
       - run: bun run docs:api:check
+      - run: bun run docs:handbook:check
       - run: bun run check:release-source

@@ -1,0 +1,296 @@
+{
+  "version": "0.20.0",
+  "status": "passed",
+  "commands": [
+    {
+      "command": "bun run test:ui",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-ui.log"
+    },
+    {
+      "command": "bun run test:ui:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-ui-narrow.log"
+    },
+    {
+      "command": "bun run test:desktop",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-desktop.log"
+    },
+    {
+      "command": "bun run test:desktop:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-desktop-narrow.log"
+    },
+    {
+      "command": "bun run test:desktop:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-desktop-states.log"
+    },
+    {
+      "command": "bun run test:workbench",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-workbench.log"
+    },
+    {
+      "command": "bun run test:workbench:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-workbench-narrow.log"
+    },
+    {
+      "command": "bun run test:workbench:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-workbench-states.log"
+    },
+    {
+      "command": "bun run test:studio",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-studio.log"
+    },
+    {
+      "command": "bun run test:studio:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-studio-narrow.log"
+    },
+    {
+      "command": "bun run test:studio:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-studio-states.log"
+    },
+    {
+      "command": "bun run test:controls",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-controls.log"
+    },
+    {
+      "command": "bun run test:controls:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-controls-narrow.log"
+    },
+    {
+      "command": "bun run test:controls:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-controls-states.log"
+    },
+    {
+      "command": "bun run test:choices",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-choices.log"
+    },
+    {
+      "command": "bun run test:choices:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-choices-narrow.log"
+    },
+    {
+      "command": "bun run test:choices:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-choices-states.log"
+    },
+    {
+      "command": "bun run test:time",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-time.log"
+    },
+    {
+      "command": "bun run test:time:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-time-narrow.log"
+    },
+    {
+      "command": "bun run test:time:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-time-states.log"
+    },
+    {
+      "command": "bun run test:tracks",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-tracks.log"
+    },
+    {
+      "command": "bun run test:tracks:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-tracks-narrow.log"
+    },
+    {
+      "command": "bun run test:tracks:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-tracks-states.log"
+    },
+    {
+      "command": "bun run test:dates",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-dates.log"
+    },
+    {
+      "command": "bun run test:dates:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-dates-narrow.log"
+    },
+    {
+      "command": "bun run test:dates:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-dates-states.log"
+    },
+    {
+      "command": "bun run test:actions",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-actions.log"
+    },
+    {
+      "command": "bun run test:actions:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-actions-narrow.log"
+    },
+    {
+      "command": "bun run test:actions:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-actions-states.log"
+    },
+    {
+      "command": "bun run test:colors",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-colors.log"
+    },
+    {
+      "command": "bun run test:colors:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-colors-narrow.log"
+    },
+    {
+      "command": "bun run test:colors:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-colors-states.log"
+    },
+    {
+      "command": "bun run test:notifications",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-notifications.log"
+    },
+    {
+      "command": "bun run test:notifications:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-notifications-narrow.log"
+    },
+    {
+      "command": "bun run test:notifications:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-notifications-states.log"
+    },
+    {
+      "command": "bun run test:tokens",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-tokens.log"
+    },
+    {
+      "command": "bun run test:tokens:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-tokens-narrow.log"
+    },
+    {
+      "command": "bun run test:tokens:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-tokens-states.log"
+    },
+    {
+      "command": "bun run test:modals",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-modals.log"
+    },
+    {
+      "command": "bun run test:modals:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-modals-narrow.log"
+    },
+    {
+      "command": "bun run test:modals:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-modals-states.log"
+    },
+    {
+      "command": "bun run test:sidebars",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-sidebars.log"
+    },
+    {
+      "command": "bun run test:sidebars:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-sidebars-narrow.log"
+    },
+    {
+      "command": "bun run test:sidebars:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-sidebars-states.log"
+    },
+    {
+      "command": "bun run test:collections",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-collections.log"
+    },
+    {
+      "command": "bun run test:collections:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-collections-narrow.log"
+    },
+    {
+      "command": "bun run test:collections:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-collections-states.log"
+    },
+    {
+      "command": "bun run test:filters",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-filters.log"
+    },
+    {
+      "command": "bun run test:filters:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-filters-narrow.log"
+    },
+    {
+      "command": "bun run test:filters:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-filters-states.log"
+    },
+    {
+      "command": "bun run test:table-prefs",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-table-prefs.log"
+    },
+    {
+      "command": "bun run test:table-prefs:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-table-prefs-narrow.log"
+    },
+    {
+      "command": "bun run test:table-prefs:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-table-prefs-states.log"
+    },
+    {
+      "command": "bun run test:catalog",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-catalog.log"
+    },
+    {
+      "command": "bun run test:catalog:narrow",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-catalog-narrow.log"
+    },
+    {
+      "command": "bun run test:catalog:states",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-catalog-states.log"
+    },
+    {
+      "command": "bun run test:input-alignment",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-input-alignment.log"
+    },
+    {
+      "command": "bun run test:handbook",
+      "status": "passed",
+      "log": "artifacts/release-logs/test-handbook.log"
+    }
+  ]
+}

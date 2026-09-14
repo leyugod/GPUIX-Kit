@@ -1,6 +1,6 @@
 {
   "name": "@mirai/gpuix-kit",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "description": "Reusable native GPUIX UIKit with Darwin-inspired light and dark themes",
   "type": "module",
   "license": "MIT",

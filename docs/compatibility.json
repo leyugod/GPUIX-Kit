@@ -1329,10 +1329,10 @@
   "maturity": "first-open-source-component-release",
   "frameworkGoal": "reference-component-contracts-complete-native-depth-remains-documented",
   "coverageDocument": "docs/untitled-ui-coverage.md",
-  "validationScope": "0.19.0 native component contracts across all 85 reference categories; commercial variants and untested host platforms are not claimed.",
+  "validationScope": "0.20.0 delivery entries and native contracts across 85 reference categories; commercial variants and untested host platforms are not claimed.",
   "implementationBatch": {
-    "version": "0.19.0",
-    "scope": "all-reference-component-category-contracts",
+    "version": "0.20.0",
+    "scope": "release-installation-standalone-starters-unified-handbook",
     "catalog": "docs/untitled-ui-coverage.md",
     "remaining": [
       "npm not published",
@@ -1340,35 +1340,36 @@
     ]
   },
   "versionPolicy": {
-    "current": "0.19.0",
-    "next": "0.20.0",
+    "current": "0.20.0",
+    "next": "0.21.0",
     "rule": "Increment the integer minor version; do not interpret it as a decimal or automatically bump to 1.0.0."
   },
   "currentBatchValidation": {
-    "version": "0.19.0",
+    "version": "0.20.0",
     "status": "passed",
     "pureTests": 178,
     "pureTestFiles": 20,
     "publicEntryPoints": 87,
     "referenceCategories": 85,
-    "nativeScripts": 57,
-    "nativeReport": "docs/releases/native-0.19.0.json",
+    "nativeScripts": 58,
+    "nativeReport": "docs/releases/native-0.20.0.json",
     "liveWindow": "passed",
     "independentPackage": "passed",
-    "inventory": "docs/untitled-ui-coverage.json",
-    "report": "docs/releases/validation-0.19.0.md",
+    "independentStarters": "passed",
+    "handbook": "85 live examples with generated Props and light/dark previews",
+    "report": "docs/releases/validation-0.20.0.md",
     "sourceArchive": "passed",
-    "sourceFiles": 281,
     "inputAlignment": {
       "status": "passed",
       "method": "native screenshot ink centers",
       "plainTextMaxOffsetPx": 0.5,
       "allGlyphsMaxOffsetPx": 1.25,
       "command": "bun run test:input-alignment"
-    }
+    },
+    "sourceFiles": 650
   },
   "firstOpenSourceRelease": {
-    "status": "local-catalog-release-validated",
+    "status": "local-delivery-entries-validated",
     "scopeDocument": "docs/plans/first-open-source-release.md",
     "deliverables": [
       "native UI components and compositions",
@@ -1385,7 +1386,7 @@
     ],
     "advancedUI": "All reference categories have native contracts; commercial variations, host services and deeper native/editor behaviors retain documented limits.",
     "publication": "GitHub target explicitly authorized: leyugod/GPUIX-Kit, main branch. Remote delivery and CI are tracked by repository history and Actions. npm not published.",
-    "inventory": "docs/releases/0.19.0.md",
+    "inventory": "docs/releases/0.20.0.md",
     "localValidatedAt": "2026-09-14"
   },
   "validationEvidenceNote": "The validation array retains per-batch historical details. Consult currentBatchValidation and firstOpenSourceRelease for current release evidence.",

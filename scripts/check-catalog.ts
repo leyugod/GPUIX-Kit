@@ -64,7 +64,7 @@ const markdown =
   data.reference +
   "), checked " +
   data.checkedAt +
-  ".\n\nAll 30 base, 37 application and 18 marketing component categories are mapped below. This is a native API mapping, not a claim of identical commercial variations or browser behavior. Full-page examples are outside the component directory. The source list is [machine-readable](untitled-ui-coverage.json).\n\nFor contracts, host boundaries and examples see [component guide](../packages/uikit/docs/catalog-completion.md). Each row is included in the sequential native regression suite; results are recorded in [release validation](releases/validation-0.19.0.md). The mapping check alone does not prove runtime behavior.\n\n| Group | Reference category | Public components | Contract | Status |\n| --- | --- | --- | --- | --- |\n" +
+  ".\n\nAll 30 base, 37 application and 18 marketing component categories are mapped below. This is a native API mapping, not a claim of identical commercial variations or browser behavior. Full-page examples are outside the component directory. The source list is [machine-readable](untitled-ui-coverage.json).\n\nFor contracts, host boundaries and examples see [component guide](../packages/uikit/docs/catalog-completion.md). Each row is included in the sequential native regression suite; results are recorded in [release validation](releases/validation-" + data.version + ".md). The mapping check alone does not prove runtime behavior.\n\n| Group | Reference category | Public components | Contract | Status |\n| --- | --- | --- | --- | --- |\n" +
   data.rows
     .map(
       (r) =>
